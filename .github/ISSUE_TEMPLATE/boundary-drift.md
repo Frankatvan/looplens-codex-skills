@@ -18,7 +18,7 @@ Describe the drift. For example:
 - archaeology included future requirements
 - implemented audit used a PRD as evidence
 - requirement drift skipped the implemented audit baseline
-- WBS or repair plans appeared too early
+- work-package or repair plans appeared too early
 
 ## Sanitized Excerpt
 
@@ -31,4 +31,3 @@ What should the skill have done instead?
 ## Project Type
 
 Example: accounting system, workflow tool, CRM, reporting app, legacy monolith, data pipeline.
-

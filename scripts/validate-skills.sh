@@ -43,8 +43,16 @@ if find "$ROOT" \( -path '*/reports/*' -o -path '*/handoffs/*' -o -path '*/runti
 fi
 
 private_pattern='(/Users/|AFS|WB公司|Audit Workbench|audit-workbench|Hermes|Mission Control|WeCom|企业微信|Google Sheet|Submission lock|提交锁定|清时捷|太和|Excel Master|wbs-doc|afs-doc|projectCode|pc_code|fatherCode|pcFather|(^|[^[:alnum:]_])WBS([^[:alnum:]_]|$))'
+scan_targets=(
+  "$ROOT/skills"
+  "$ROOT/README.md"
+  "$ROOT/README.zh-CN.md"
+  "$ROOT/CONTRIBUTING.md"
+  "$ROOT/PUBLICATION.md"
+  "$ROOT/.github"
+)
 
-if grep -RInE "$private_pattern" "$ROOT/skills" "$ROOT/README.md" "$ROOT/CONTRIBUTING.md" "$ROOT/PUBLICATION.md" >/tmp/looplens-private-scan.txt; then
+if grep -RInE "$private_pattern" "${scan_targets[@]}" >/tmp/looplens-private-scan.txt; then
   echo "Potential private or overfit terms found:" >&2
   cat /tmp/looplens-private-scan.txt >&2
   exit 1

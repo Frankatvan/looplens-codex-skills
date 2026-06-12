@@ -1,5 +1,13 @@
 # LoopLens Codex Skills
 
+[![Validate Skills](https://github.com/Frankatvan/looplens-codex-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/Frankatvan/looplens-codex-skills/actions/workflows/validate.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Codex Skills](https://img.shields.io/badge/Codex-Skills-111827.svg)](skills)
+[![Workflow](https://img.shields.io/badge/workflow-archaeology%20%2B%20audit%20%2B%20drift-blue.svg)](#recommended-workflow)
+[![Languages](https://img.shields.io/badge/docs-English%20%7C%20中文-orange.svg)](README.zh-CN.md)
+
+**English** | [中文](README.zh-CN.md)
+
 LoopLens Codex Skills is a three-skill workflow for understanding implemented systems, auditing implemented closed-loop data design, and reviewing whether new requirements will pollute that design.
 
 中文名：闭环镜 Skill 套件。
